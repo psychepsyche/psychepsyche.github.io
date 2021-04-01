@@ -10,7 +10,7 @@ skip_related: true
   {% assign totalwords = totalwords | plus: wordcount %}
 {% endfor %}
 
-{{ site.posts.last.date | date: "%Y" }}年以来,我已经写了{{ totalwords }} 字。
+{{ site.posts.last.date | date: "%Y" }}年{{ site.posts.last.date | date: "%M" }}月以来,我已经写了{{ totalwords }} 字。
 
 <div id="archive">
 {% for post in site.posts %}
