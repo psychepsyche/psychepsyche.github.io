@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Archives
+title: 历史文章
 skip_related: true
 ---
 
