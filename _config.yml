@@ -1,0 +1,23 @@
+url: https://psychepsyche.top
+lsi: false
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+exclude:
+  ["CNAME", "README.md", "Rakefile", "generate.rb", "Gemfile", "Gemfile.lock"]
+include: ["_pages"]
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jemoji
+author:
+  name: 刘国强
+  email: psychepsyche@sina.com
+  url: https://psychepsyche.top
+title: 全世界无产者联合起来！
+feed:
+  path: atom.xml
+
+theme: jekyll-theme-leap-day
