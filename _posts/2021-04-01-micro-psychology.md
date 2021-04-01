@@ -2,8 +2,8 @@
 layout: writeup
 title: "微精神分析学"
 full_title: "微精神分析学"
-author: （瑞士）S·方迪
-isbn: 
+author: S·方迪
+isbn: 9787108005779
 image: wjsfx.jpg
 categories: writeup
 favorite: true
