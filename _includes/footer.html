@@ -1,0 +1,40 @@
+<footer>
+  <div id="bio">
+    <div id="bio-image">
+      <img src="/static/matt-swanson.jpeg" alt="Matt Swanson">
+    </div>
+    
+    <div id="bio-text">
+      <p>Hi. I'm <b>Matt Swanson</b>.</p>
+      <p>I do things and sometimes write about it here.<br/>I'm a Product Engineer from Indiana and I ship code at <a href="https://arrows.to">Arrows</a>.</p>
+      
+      <div id="bio-social">
+        {% include social.html %}
+      </div>
+    </div>
+  </div>
+
+  {% unless page.skip_related %}
+  <aside>
+    <h3>Further reading</h3>
+    <ul class="posts">
+      {% if page.tags %}
+        {% assign sn = page.tags.first %}
+        {% for post in site.tags[sn] limit:3 %}
+          {% unless page.title == post.title %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+          {% endunless %}
+        {% endfor %}
+      {% else %}
+        {% for post in site.related_posts limit:3 %}
+          {% unless page.title == post.title %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+          {% endunless %}
+        {% endfor %}
+      {% endif %}
+    </ul>
+  </aside>
+  {% endunless %}
+</footer>
+
+{% include fine-print.html %}
