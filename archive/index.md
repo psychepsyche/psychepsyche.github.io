@@ -10,7 +10,7 @@ skip_related: true
   {% assign totalwords = totalwords | plus: wordcount %}
 {% endfor %}
 
-Since {{ site.posts.last.date | date: "%B %d, %Y" }}, I've written {{ totalwords }} words on software, product development, and professional growth. I hope you've enjoyed reading at least some of those words. My favorite posts are **bolded** below.
+自从 {{ site.posts.last.date | date: "%B %d, %Y" }}以来，我已经写了 {{ totalwords }} 字了。我喜欢的文章都**加粗**了。
 
 <div id="archive">
 {% for post in site.posts %}
